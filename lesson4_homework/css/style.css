@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? Family= Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900 & Family= Roboto+Slab:wght@ 300;500 & Family= Рубик+Маркер+Штриховка & display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: rgb(197, 197, 249);
+  font-family: "Merriweather";
+  font-size: 18px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+
+.header H1 {
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid;
+  padding: 0px 0px 5px 0px;
+}
+
+[title~=перейти] {
+  color: rgb(32, 181, 106);
+}
+
+[title]::before {
+  content: "(?)";
+  color: #331895;
+  display: inline-block;
+  margin-right: 5px;
+  padding-left: 3px;
+  text-shadow: none;
+}
+
+[title]:hover {
+  text-shadow: 2px 2px 2px #000;
+  color: lightskyblue;
+}
+
+[href="https://uk.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D1%81%D1%8C%D0%BA%D1%96_%D0%B2%D0%B8%D0%B1%D0%BE%D1%80%D0%B8_%D0%B2_%D0%A3%D0%A0%D0%A1%D0%A0_1990"] {
+  color: rgb(93, 71, 183);
+}
+
+[class*=__list-item] {
+  line-height: 30px;
+  font-weight: 500;
+}
+
+[class^=list] {
+  font-size: 20px;
+  line-height: 30px;
+  background-color: #bbaa30;
+  font-weight: 500;
+  padding: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 0px;
+}
+
+[class$=item]::before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0px 10px 0px 0px;
+  background-color: blue;
+  border-radius: 50%;
+  padding: 0px 0px 0px 10px;
+  border: 3px solid white;
+}
+
+div[class|=declaration] {
+  color: rgb(179, 25, 130);
+}
+
+.footer {
+  color: green;
+}
+
+.siple-table {
+  background-color: rgb(192, 222, 163);
+  margin: 0 auto;
+}
+
+.siple-table th,
+.siple-table td {
+  border: 1px solid;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.siple-table th {
+  font-weight: bold;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Rubik+Marker+Hatch&display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background: url(/img/wpapers_ru_Горы-у-озера.jpg);
+  min-height: 100vh;
+}
+
+.sticky {
+  position: sticky;
+  max-width: 1050px;
+  margin: 0 auto;
+  top: 0;
+  font-family: "Rubik Marker Hatch";
+  background-color: rgba(38, 47, 231, 0.3);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 7px;
+  word-spacing: 20px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.portfolio {
+  padding: 20px 0px 0px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.portfolio__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; /* Обертывание элементов в случае нехватки места */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* Распределение элементов по ширине контейнера */
+}
+
+.item-flex {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(33.333% - 100px);
+          flex: 0 0 calc(33.333% - 100px); /* Размер элемента - 33.333% (1/3) минус отступы */
+  margin-bottom: 20px; /* Отступ между элементами */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* Учесть отступы внутри элементов */
+}
+.item-flex img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.footer {
+  font-family: "Rubik Marker Hatch";
+  background-color: rgba(38, 47, 231, 0.3);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 7px;
+  word-spacing: 20px;
+}
