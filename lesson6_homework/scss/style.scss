@@ -96,7 +96,6 @@ body {
 	// .benefits__row
 	&__row {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: space-around;
 		gap: 1.8rem;
 
@@ -130,7 +129,7 @@ body {
 	line-height: normal;
 }
 .list__item ::before {
-	content: url("/img/Vector.svg"); /* Символ, который будет использоваться в качестве маркера */
+	content: url("../img/vector.svg"); /* Символ, который будет использоваться в качестве маркера */
 	margin-right: 0.7rem; /* Отступ между маркером и текстом */
 	display: inline-block;
 	vertical-align: middle;
