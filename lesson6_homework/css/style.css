@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,600,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "inter";
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.why-us {
+  margin: 0 auto;
+  max-width: 692px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title {
+  margin-bottom: 2.2rem;
+}
+.title h1 {
+  margin-bottom: 1rem;
+  color: #37393f;
+  font-family: "Poppins";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 127%;
+}
+.title p {
+  color: #7d7d7d;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 146.187%;
+}
+
+.main-image {
+  padding: 2.31rem 0rem;
+}
+.main-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.subtitle h2 {
+  color: #6b77e5;
+  font-family: "Poppins";
+  font-size: 1.45rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 127%;
+  margin-bottom: 0.75rem;
+}
+.subtitle p {
+  margin-bottom: 2.5rem;
+  color: #7d7d7d;
+  font-family: "Inter";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 146.187%;
+}
+
+.benefits__title H2 {
+  color: #37393f;
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 127%;
+  margin-bottom: 1rem;
+}
+.benefits__subtitle {
+  color: #40ddb6;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 127%;
+  margin-bottom: 1.3rem;
+}
+.benefits__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1.8rem;
+}
+
+.benefits-rightside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 331px;
+          flex: 0 0 331px;
+}
+
+.list__item li:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+
+.item-list {
+  color: #7d7d7d;
+  font-family: "Inter";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.list__item ::before {
+  content: url("/img/Vector.svg"); /* Символ, который будет использоваться в качестве маркера */
+  margin-right: 0.7rem; /* Отступ между маркером и текстом */
+  display: inline-block;
+  vertical-align: middle;
+}
