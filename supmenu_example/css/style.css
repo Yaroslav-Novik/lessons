@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Rubik+Marker+Hatch&display=swap");
+/*Обнуление*/
+@import "nullstyle.css";
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.main {
+}
+.menu {
+	padding: 30px;
+}
+.menu__item {
+	position: relative;
+	display: inline-block;
+	background-color: aqua;
+	margin-right: 15px;
+}
+.menu__item:hover .menu__link {
+	background-color: rgb(51, 206, 206);
+}
+.menu__item:hover .submenu {
+	visibility: visible;
+}
+
+a {
+	font-size: 20px;
+	font-weight: 550;
+	text-transform: capitalize;
+	display: inline-block;
+	color: rgb(85, 84, 84);
+}
+.menu__link {
+	display: inline-block;
+	padding: 10px 20px;
+}
+.submenu {
+	padding-top: 8px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	visibility: hidden;
+}
+
+.submenu__item {
+	margin-bottom: 12px;
+	position: relative;
+}
+.submenu__item:last-child {
+	margin-bottom: 0px;
+}
+.submenu__link {
+	background-color: pink;
+	padding: 10px 20px;
+}
+.submenu__item:hover .submenu__link {
+	background-color: rgb(244, 149, 165);
+	border: 1px solid;
+}
+.suppmenu__wrapper {
+	padding-left: 10px;
+
+	position: absolute;
+	top: 0%;
+	left: 100%;
+	visibility: hidden;
+}
+.suppmenu {
+	background-color: rgb(192, 191, 191);
+	padding: 10px;
+	position: absolute;
+	top: 0%;
+	left: 100%;
+	visibility: hidden;
+}
+.submenu__item:hover .suppmenu__wrapper > .suppmenu {
+	visibility: visible;
+}
+
+.suppmenu__item:hover .suppmenu__link {
+	background-color: rgb(241, 241, 105);
+	border: 1px solid;
+}
+.suppmenu__item {
+	background-color: rgb(240, 240, 137);
+	margin-bottom: 10px;
+}
+.suppmenu__link {
+	font-size: 16px;
+	padding: 6px 12px;
+}
