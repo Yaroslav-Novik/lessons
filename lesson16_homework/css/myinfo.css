@@ -1,0 +1,220 @@
+@import "nullstyle.css";
+@import "fonts.css";
+body {
+}
+
+.wrapper {
+}
+.container {
+	background-color: #fff;
+	max-width: 56rem;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 15px;
+}
+
+.form__titles h2:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+.form__titles h2 {
+	color: #3c4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 2.09375rem; /* 119.643% */
+	letter-spacing: 0.035rem;
+}
+.form__titles h3 {
+	margin-bottom: 3.12rem;
+}
+.form__titles h3 {
+	color: #3c4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 1.375rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 2.09375rem; /* 152.273% */
+	letter-spacing: 0.0275rem;
+}
+
+.form__body {
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+}
+.form__row {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+.form__column {
+}
+.leftside-forms {
+	flex: 0 1 26.64rem;
+}
+.rightside-forms {
+	flex: 0 1 26.64rem;
+}
+.footer {
+}
+
+/* Inputs style  */
+input:focus::placeholder {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+/* Установка плейсхолдера для select */
+select option[value="0"] {
+	color: #8a33fd;
+	/* Цвет текста плейсхолдера */
+	display: none;
+	/* Скрытие пустого элемента */
+}
+select option[value="2"] {
+	color: #bfbdc1;
+	/* Цвет текста плейсхолдера */
+
+	/* Скрытие пустого элемента */
+}
+
+/* Стилизация плейсхолдера при фокусе */
+select:focus option[value="0"]:first-child {
+	display: block;
+	/* Отображение плейсхолдера при фокусе */
+}
+
+input {
+	color: #807d7e;
+
+	padding: 0 20px;
+	font-family: "Causten", sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.input-group__line-input:focus {
+	outline: 2px solid #8a33fd;
+}
+.input-group__line-input {
+	width: 100%;
+	background-color: #f6f6f6;
+	height: 3rem;
+	border-radius: 0.5rem;
+	color: #807d7e;
+	padding: 0 20px;
+	font-family: "Causten", sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.form-name {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+}
+label {
+	cursor: pointer;
+	color: #3c4242;
+	font-family: "Causten", sans-serif;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: 600;
+
+	letter-spacing: 0.0225rem;
+}
+.input-group:not(:last-child) {
+	margin-bottom: 1.95rem;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+}
+.input-group__label {
+	cursor: pointer;
+}
+.form__column {
+	display: flex;
+	flex-direction: column;
+	gap: 1.9rem;
+}
+.form__delivery-instruction {
+}
+.delivery {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+}
+.textarea__label {
+}
+.form__textarea::placeholder {
+	color: #807d7e;
+	font-family: "Causten", sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.form__textarea:focus::placeholder {
+}
+.form__textarea {
+	padding: 15px;
+	background-color: #f6f6f6;
+	width: 100%;
+	height: 9.4rem;
+	resize: vertical;
+}
+.checkbox__body:not(:last-child) {
+	margin-bottom: 1rem;
+}
+.checkbox {
+}
+.checkbox__body {
+	position: relative;
+}
+
+.checkbox__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.checkbox__input:checked + .checkbox__label::before {
+	background: url("../img/icons/galka.svg") center no-repeat;
+}
+.checkbox__label {
+	display: inline-flex;
+	gap: 0.7rem;
+}
+.checkbox__label::before {
+	content: "";
+	flex: 0 0 1.25rem;
+	width: 1.25rem;
+	height: 1.25rem;
+	border: 2px solid #bebcbd;
+}
+.form__buttons {
+	display: flex;
+	gap: 1.9rem;
+}
+.form__buttton {
+	width: 7.8rem;
+	height: 3rem;
+
+	border-radius: 0.5rem;
+	background: #8a33fd;
+	color: #fff;
+	text-align: center;
+	font-family: "Causten", sans-serif;
+	font-size: 1.25544rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}

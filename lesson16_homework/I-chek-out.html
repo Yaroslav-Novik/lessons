@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="css/checkout.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+
+			<header class="header">
+				<nav class="nav">
+					<div class="nav-home">Home </div>
+					<div class="nav-myacc">My Account </div>
+					<div class="nav-chek">Check Out</div>
+				</nav>
+			</header>
+
+			<main class="page">
+				<div class="page__container">
+					<div class="check-out">
+						<div class="check-out__titles">
+							<div class="check-out__title title">
+								<h1>Check Out</h1>
+							</div>
+							<div class="check-out__subtitle">
+								<h2>Billing Details</h2>
+							</div>
+						</div>
+						<form action="#" method="GET" class="check-out__forms forms">
+							<div class="forms__row">
+								<div class="forms__leftside input-group">
+									<div class="inputs__group">
+										<label class="input-group__label" for="firstname">First name*</label>
+										<input class="input-group__line-input" id="firstname" tabindex="1" name="firstname"
+											type="text" autocomplete="on" placeholder="First name" required>
+									</div>
+									<div class="inputs__group">
+										<label class="input-group__label" for="country">Country / Region*</label>
+										<input class="input-group__line-input" id="country" name="country" tabindex="3"
+											type="text" autocomplete="on" placeholder="Country / Region">
+									</div>
+									<div class="inputs__group">
+										<label class="input-group__label" for="street">Street Address*</label>
+										<input class="input-group__line-input" id="street" name="street" tabindex="5" type="text"
+											autocomplete="on" placeholder="House number and street name">
+									</div>
+								</div>
+								<div class="forms__rightside">
+									<div class="inputs__group">
+										<label class="input-group__label" for="lastname">Last Name*</label>
+										<input class="input-group__line-input" id="lastname" tabindex="4" name="lastname"
+											type="text" autocomplete="on" placeholder="Last name" required>
+									</div>
+									<div class="inputs__group">
+										<label class="input-group__label" for="company">Company Name</label>
+										<input class="input-group__line-input" id="company" name="company" tabindex="5"
+											type="text" autocomplete="on" placeholder="Company (optional)">
+									</div>
+									<div class="inputs__group">
+										<label class="input-group__label" for="street">Apt, suite, unit</label>
+										<input class="input-group__line-input" id="street" name="street" tabindex="6" type="text"
+											autocomplete="on" placeholder="apartment, suite, unit, etc. (optional)">
+									</div>
+								</div>
+							</div>
+							<div class="forms__inline-row">
+								<div class="inputs__group--mini">
+									<label class="input-group__label--mini" for="street">City*</label>
+									<input class="input-group__line-input--mini" id="city" name="city" tabindex="7" type="text"
+										autocomplete="on" placeholder="Town / City">
+								</div>
+
+								<div class="inputs__group--mini">
+									<label class="input-group__label--mini" for="state">State*</label>
+									<select class="input-group__line-input--mini" id="state" name="state" tabindex="8" required
+										autocomplete="on" placeholder="State">
+										<option value="0" disabled selected>Choose your state</option>
+										<option value="1">Alabama</option>
+										<option value="2" disabled>California</option>
+										<option value="3">Colorado</option>
+										<option value="4">Connecticut</option>
+									</select>
+								</div>
+								<div class="inputs__group--mini">
+									<label class="input-group__label--mini" for="street">Postal Code*</label>
+									<input class="input-group__line-input--mini" id="postalcode" name="postalcode" tabindex="9"
+										type="text" autocomplete="on" placeholder="Postal Code">
+								</div>
+							</div>
+							<div class="forms__phone">
+								<div class="inputs__group">
+									<label class="input-group__label" for="phope	">Phone*</label>
+									<input class="input-group__line-input" id="phone" name="phone" tabindex="10" type="tel"
+										autocomplete="on" placeholder="Phone">
+								</div>
+							</div>
+							<div class="form__button-and-checkbox">
+								<div class="forms__button">
+									<button class="button">Continue to delivery</button>
+								</div>
+								<div class="forms__checkbox">
+									<div class="checkbox__body">
+										<label class="checkbox-label">
+											<input class="real-checkbox" type="checkbox" name="save-info">
+											<span class="custom-checkbox"></span>
+											Save my information for a faster checkout
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="shiping-adres">
+								<div class="shiping-adres__body">
+									<div class="shiping__title title">
+										<div class="supsuptitle">
+											<h4>
+												Shipping Address
+											</h4>
+											<p>Select the address that matches your card or payment method.</p>
+										</div>
+									</div>
+									<fieldset class="fieldset radios">
+										<div class="form-group">
+											<label class="radio-label">
+												<input class="real-radio" type="radio" name="address" value="same" tabindex="1">
+												<span class="custom-radio"></span>
+												Same as Billing address
+											</label>
+											<label class="radio-label">
+												<input class="real-radio" type="radio" name="address" value="different"
+													tabindex="2">
+												<span class="custom-radio"></span>
+												Use a different shipping address
+											</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+							<div class="shiping-method">
+								<div class="shiping-method__body--short">
+									<div class="shiping__title title">
+										<div class="supsuptitle">
+											<h4>
+												Payment Method
+											</h4>
+										</div>
+									</div>
+									<div class="form-wrapper">
+										<div class="form-group">
+											<div class="date">
+												Arrives by Monday, June 7
+											</div>
+											<div class="price-body">
+												<div class="price">
+													<div class="description">Delivery Charges</div>
+													<div class="value">$5.00</div>
+												</div>
+												<div class="annotation">Additional fess may apply</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="shiping-method__body--long">
+									<div class="shiping__title title">
+										<div class="supsuptitle">
+											<h4>
+												Payment Method
+											</h4>
+											<p>All transactions are secure and encrypted.</p>
+										</div>
+									</div>
+									<div class="form-wrapper">
+										<label class="radio-label--flex">
+											<input class="real-radio" type="radio" name="address" value="different" tabindex="2">
+											<span class="custom-radio"></span>
+											<div class="radio-flex">
+												<h5>Credit Card</h5>
+												<p>We accept all major credit cards.</p>
+											</div>
+										</label>
+										<ul class="list">
+											<li class="list__item">
+												<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
+													<img class="list__image" src="/img/icons/gpay.svg" alt="">
+												</a>
+											</li>
+											<li class="list__item">
+												<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
+													<img class="list__image" src="/img/icons/visa.svg" alt="">
+												</a>
+											</li>
+											<li class="list__item">
+												<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
+													<img class="list__image" src="/img/icons/paypal.svg" alt="">
+												</a>
+											</li>
+											<li class="list__item">
+												<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
+													<img class="list__image" src="/img/icons/paypass.svg" alt="">
+												</a>
+											</li>
+										</ul>
+										<div class="cards">
+											<div class="cards-group">
+												<div class="cards__row">
+													<div class="inputs__group--card">
+														<input class="input-group__line-input--border" id="cardnumber"
+															name="cardnumber" tabindex="16" type="tel" autocomplete="on"
+															placeholder="Card number">
+													</div>
+													<div class="inputs__group--card">
+														<input class="input-group__line-input--border" id="cardnumber"
+															name="cardnumber" tabindex="16" type="tel" autocomplete="on"
+															placeholder="Card number">
+													</div>
+												</div>
+												<div class="cards__row">
+													<div class="inputs__group--card">
+														<input class="input-group__line-input--border" id="cardnumber"
+															name="cardnumber" tabindex="16" type="tel" autocomplete="on"
+															placeholder="Card number">
+													</div>
+													<div class="inputs__group--card">
+														<input class="input-group__line-input--border" id="cardnumber"
+															name="cardnumber" tabindex="16" type="tel" autocomplete="on"
+															placeholder="Card number">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					</form>
+				</div>
+
+		</div>
+		</form>
+
+	</div>
+	</div>
+	</main>
+	<footer class="footer"></footer>
+	</div>
+	</div>
+</body>

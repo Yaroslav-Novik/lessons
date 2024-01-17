@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Empty Select on Focus</title>
+	<style>
+		/* Установка плейсхолдера для select */
+		select option[value=""]:first-child {
+			color: #999;
+			/* Цвет текста плейсхолдера */
+			display: none;
+			/* Скрытие пустого элемента */
+		}
+
+		/* Стилизация плейсхолдера при фокусе */
+		select:focus option[value=""]:first-child {
+			display: block;
+			/* Отображение плейсхолдера при фокусе */
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Пример пустого select с плейсхолдером -->
+	<label for="mySelect">Choose an option:</label>
+	<select id="mySelect">
+		<option value="" disabled selected>Select an option</option>
+		<option value="option1">Option 1</option>
+		<option value="option2">Option 2</option>
+		<option value="option3">Option 3</option>
+	</select>
+
+</body>
+
+</html>

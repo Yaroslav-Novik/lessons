@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="css/myinfo.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<header class="header"></header>
+			<main class="main">
+				<div class="form-container">
+					<div class="form__titles">
+						<h2>My Info</h2>
+						<h3>Add Address</h3>
+					</div>
+					<form class="form__body form">
+						<div class="form__row">
+							<div class="leftside">
+								<div class="form-name" action="#" method="GET">
+									<div class="input-group">
+										<label class="input-group__label" for="firstname">First name*</label>
+										<input class="input-group__line-input" id="firstname" tabindex="1" name="firstname"
+											type="text" autocomplete="on" placeholder="First name" required>
+									</div>
+									<div class="input-group">
+										<label class="input-group__label" for="country">Country / Region*</label>
+										<input class="input-group__line-input" id="country" name="country" tabindex="3"
+											type="text" autocomplete="on" placeholder="Country / Region">
+									</div>
+									<div class="input-group">
+										<label class="input-group__label" for="street">Street Address*</label>
+										<input class="input-group__line-input" id="street" name="street" tabindex="5" type="text"
+											autocomplete="on" placeholder="House number and street name">
+									</div>
+									<div class="input-group">
+										<label class="input-group__label" for="city">City*</label>
+										<input class="input-group__line-input" id="city" name="city" tabindex="7" type="text"
+											autocomplete="on" placeholder="Town / City">
+									</div>
+									<div class="input-group">
+										<label class="input-group__label" for="city">Phone*</label>
+										<input class="input-group__line-input" id="phone" name="phone" tabindex="9" type="tel"
+											autocomplete="on" placeholder="Phone">
+									</div>
+								</div>
+							</div>
+							<div class="rightside">
+								<div class="form-name" action="#" method="GET">
+									<div class="input-group">
+										<label class="input-group__label" for="lastname">Last name*</label>
+										<input class="input-group__line-input" id="lastname" tabindex="2" name="lastname"
+											type="text" autocomplete="on" placeholder="Last name">
+									</div>
+									<div class="input-group">
+										<label class="input-group__label" for="company">Company Name</label>
+										<input class="input-group__line-input" id="company" name="company" tabindex="4"
+											type="text" autocomplete="on" placeholder="Company (optional)">
+									</div>
+									<div class="input-group">
+										<label class="input-group__label" for="flat/office">Apt, suite, unit</label>
+										<input class="input-group__line-input" id="flat/office" name="flat/office" tabindex="6"
+											type="text" autocomplete="on" placeholder="Apartment, suite, unit, etc. (optional)">
+									</div>
+									<div class="input-group">
+										<label class="input-group__label" for="state">State*</label>
+										<select class="input-group__line-input" id="state" name="state" tabindex="8" 
+											autocomplete="on" placeholder="State">
+											<option value="" disabled selected>Select your state</option>
+											<option value="1">Alabama</option>
+											<option value="2">California</option>
+											<option value="3">Colorado</option>
+											<option value="4">Connecticut</option>
+										</select>
+									</div>
+									<div class="input-group">
+										<label class="input-group__label" for="city">Phone*</label>
+										<input class="input-group__line-input" id="phone" name="phone" tabindex="9" type="tel"
+											autocomplete="on" placeholder="Phone">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__column">
+							<div class="form__delivery-instruction">
+								<textarea tabindex="11" class="form__textarea" name="Delivery Instruction" id="delivery"
+									placeholder="Delivery Instruction">
+									Delivery Instruction
+								</textarea>
+							</div>
+							<div class="form__buttons">
+								<button class="form__buttton" type="submit">Save</button>
+								<button class="form__buttton" type="clear">Cancel</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	</div>
+</body>
+
+</html>
