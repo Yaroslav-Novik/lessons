@@ -13,15 +13,15 @@
 		<div class="container">
 			<header class="header"></header>
 			<main class="main">
-				<div class="form">
+				<div class="form-container">
 					<div class="form__titles">
 						<h2>My Info</h2>
 						<h3>Add Address</h3>
 					</div>
 					<form class="form__body form">
 						<div class="form__row">
-							<div class="leftside-forms">
-								<div class="form-name">
+							<div class="leftside">
+								<div class="form-name" action="#" method="GET">
 									<div class="input-group">
 										<label class="input-group__label" for="firstname">First name*</label>
 										<input class="input-group__line-input" id="firstname" tabindex="1" name="firstname"
@@ -49,7 +49,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="rightside-forms">
+							<div class="rightside">
 								<div class="form-name" action="#" method="GET">
 									<div class="input-group">
 										<label class="input-group__label" for="lastname">Last name*</label>
@@ -68,41 +68,29 @@
 									</div>
 									<div class="input-group">
 										<label class="input-group__label" for="state">State*</label>
-										<select class="input-group__line-input" id="state" name="state" tabindex="8" required
+										<select class="input-group__line-input" id="state" name="state" tabindex="8" 
 											autocomplete="on" placeholder="State">
-											<option value="0" disabled selected>Choose your state</option>
+											<option value="" disabled selected>Select your state</option>
 											<option value="1">Alabama</option>
-											<option value="2" disabled>California</option>
+											<option value="2">California</option>
 											<option value="3">Colorado</option>
 											<option value="4">Connecticut</option>
 										</select>
 									</div>
 									<div class="input-group">
-										<label class="input-group__label" for="city">Postal Code*</label>
-										<input class="input-group__line-input" id="postal-code" name="postal-code" tabindex="10"
-											type="number" autocomplete="on" placeholder="Postal Code">
+										<label class="input-group__label" for="city">Phone*</label>
+										<input class="input-group__line-input" id="phone" name="phone" tabindex="9" type="tel"
+											autocomplete="on" placeholder="Phone">
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="form__column">
-							<div class="form__delivery-instruction delivery">
-								<label class="textarea__label" for="delivery">Delivery Instruction</label>
-								<textarea class="form__textarea" name="Delivery Instruction" id="delivery"
+							<div class="form__delivery-instruction">
+								<textarea tabindex="11" class="form__textarea" name="Delivery Instruction" id="delivery"
 									placeholder="Delivery Instruction">
+									Delivery Instruction
 								</textarea>
-							</div>
-							<div class="checkbox">
-								<div class="checkbox__body">
-									<input id="shipping" class="checkbox__input" name="shipping" type="checkbox" checked>
-									<label class="checkbox__label" for="shipping">Set as default shipping address</label>
-
-								</div>
-								<div class="checkbox__body">
-									<input id="billing" class="checkbox__input" name="shipping" type="checkbox">
-									<label class="checkbox__label" for="billing">Set as default billing address</label>
-
-								</div>
 							</div>
 							<div class="form__buttons">
 								<button class="form__buttton" type="submit">Save</button>

@@ -4,6 +4,15 @@ body {
 }
 
 .wrapper {
+	overflow: clip;
+	max-width: 100vh;
+	margin: 0 auto;
+}
+#state {
+	color: #807d7e;
+	font-family: "Causten" sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
 }
 .container {
 	background-color: #fff;
@@ -13,12 +22,6 @@ body {
 	padding: 40px 15px;
 }
 input::placeholder {
-	color: #807d7e;
-	font-family: "Causten" sans-serif;
-	font-size: 0.875rem;
-	font-weight: 400;
-}
-#state {
 	color: #807d7e;
 	font-family: "Causten" sans-serif;
 	font-size: 0.875rem;
@@ -36,6 +39,9 @@ input::placeholder {
 	font-weight: 600;
 	line-height: 2.09375rem; /* 119.643% */
 	letter-spacing: 0.035rem;
+}
+.form__titles h2::first-letter {
+	color: #8a33fd;
 }
 .form__titles h3 {
 	margin-bottom: 3.12rem;
