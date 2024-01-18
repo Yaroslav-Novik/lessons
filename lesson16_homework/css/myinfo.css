@@ -12,6 +12,18 @@ body {
 	margin: 0 auto;
 	padding: 40px 15px;
 }
+input::placeholder {
+	color: #807d7e;
+	font-family: "Causten" sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+#state {
+	color: #807d7e;
+	font-family: "Causten" sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
 
 .form__titles h2:not(:last-child) {
 	margin-bottom: 1.25rem;
@@ -100,15 +112,14 @@ input {
 .input-group__line-input {
 	width: 100%;
 	background-color: #f6f6f6;
-	height: 3rem;
+
+	padding: 1rem 1.25rem;
 	border-radius: 0.5rem;
-	color: #807d7e;
-	padding: 0 20px;
+	color: #3c4242;
 	font-family: "Causten", sans-serif;
 	font-size: 1rem;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
+	font-weight: 600;
+	letter-spacing: 0.02rem;
 }
 
 .form-name {
@@ -192,6 +203,13 @@ label {
 .checkbox__label {
 	display: inline-flex;
 	gap: 0.7rem;
+}
+textarea:focus-visible {
+	outline: 2px solid #8a33fd;
+}
+.checkbox__input:focus-visible + .checkbox__label::before {
+	outline: 2px solid #8a33fd;
+	padding: 3px;
 }
 .checkbox__label::before {
 	content: "";

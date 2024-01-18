@@ -58,13 +58,13 @@
 									</div>
 									<div class="inputs__group">
 										<label class="input-group__label" for="company">Company Name</label>
-										<input class="input-group__line-input" id="company" name="company" tabindex="5"
+										<input class="input-group__line-input" id="company" name="company" tabindex="4"
 											type="text" autocomplete="on" placeholder="Company (optional)">
 									</div>
 									<div class="inputs__group">
-										<label class="input-group__label" for="street">Apt, suite, unit</label>
-										<input class="input-group__line-input" id="street" name="street" tabindex="6" type="text"
-											autocomplete="on" placeholder="apartment, suite, unit, etc. (optional)">
+										<label class="input-group__label" for="address2">Apt, suite, unit</label>
+										<input class="input-group__line-input" id="address2" name="address2" tabindex="6"
+											type="text" autocomplete="on" placeholder="apartment, suite, unit, etc. (optional)">
 									</div>
 								</div>
 							</div>
@@ -101,12 +101,13 @@
 							</div>
 							<div class="form__button-and-checkbox">
 								<div class="forms__button">
-									<button class="button">Continue to delivery</button>
+									<button class="button" tabindex="11">Continue to delivery</button>
 								</div>
 								<div class="forms__checkbox">
 									<div class="checkbox__body">
 										<label class="checkbox-label">
-											<input class="real-checkbox" type="checkbox" name="save-info">
+											<input class="real-checkbox" id="save-info" type="checkbox" name="save-info"
+												tabindex="12">
 											<span class="custom-checkbox"></span>
 											Save my information for a faster checkout
 										</label>
@@ -126,13 +127,14 @@
 									<fieldset class="fieldset radios">
 										<div class="form-group">
 											<label class="radio-label">
-												<input class="real-radio" type="radio" name="address" value="same" tabindex="1">
+												<input class="real-radio" type="radio" name="shiping-adres" value="same"
+													tabindex="13">
 												<span class="custom-radio"></span>
 												Same as Billing address
 											</label>
 											<label class="radio-label">
-												<input class="real-radio" type="radio" name="address" value="different"
-													tabindex="2">
+												<input class="real-radio" type="radio" name="shiping-adres" value="different"
+													tabindex="14">
 												<span class="custom-radio"></span>
 												Use a different shipping address
 											</label>
@@ -174,73 +176,95 @@
 										</div>
 									</div>
 									<div class="form-wrapper">
-										<label class="radio-label--flex">
-											<input class="real-radio" type="radio" name="address" value="different" tabindex="2">
-											<span class="custom-radio"></span>
-											<div class="radio-flex">
-												<h5>Credit Card</h5>
-												<p>We accept all major credit cards.</p>
+										<div class="form-wrapper form-padding">
+											<label class="radio-label--flex">
+												<input class="real-radio" type="radio" id="credit-card" name="paymethod"
+													value="credit-card" tabindex="15">
+												<span class="custom-radio"></span>
+												<div class="radio-flex">
+													<h5>Credit Card</h5>
+													<p>We accept all major credit cards.</p>
+												</div>
+											</label>
+											<ul class="list">
+												<li class="list__item">
+													<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
+														<img class="list__image" src="/img/icons/gpay.svg" alt="">
+													</a>
+												</li>
+												<li class="list__item">
+													<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
+														<img class="list__image" src="/img/icons/visa.svg" alt="">
+													</a>
+												</li>
+												<li class="list__item">
+													<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
+														<img class="list__image" src="/img/icons/paypal.svg" alt="">
+													</a>
+												</li>
+												<li class="list__item">
+													<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
+														<img class="list__image" src="/img/icons/paypass.svg" alt="">
+													</a>
+												</li>
+											</ul>
+											<div class="cards">
+												<div class="cards__group">
+													<div class="cards__row">
+														<div class="inputs__group--card">
+															<input class="input-group__line-input--border" id="cardnumber"
+																name="cardnumber" tabindex="16" type="tel" autocomplete="on"
+																placeholder="Card number">
+														</div>
+														<div class="inputs__group--card">
+															<input class="input-group__line-input--border" id="cardname"
+																name="cardnumber" tabindex="17" type="text" autocomplete="on"
+																placeholder="Name of card">
+														</div>
+													</div>
+													<div class="cards__row">
+														<div class="inputs__group--card">
+															<input class="input-group__line-input--border" id="carddate"
+																name="carddate" tabindex="18" type="tel" autocomplete="on"
+																placeholder="Expiration date (MM/YY)">
+														</div>
+														<div class="inputs__group--card eye">
+															<input class="input-group__line-input--border " id="securitycode"
+																name="securitycode" tabindex="19" type="password" autocomplete="on"
+																placeholder="Security Code">
+														</div>
+													</div>
+												</div>
 											</div>
-										</label>
-										<ul class="list">
-											<li class="list__item">
-												<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
-													<img class="list__image" src="/img/icons/gpay.svg" alt="">
-												</a>
-											</li>
-											<li class="list__item">
-												<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
-													<img class="list__image" src="/img/icons/visa.svg" alt="">
-												</a>
-											</li>
-											<li class="list__item">
-												<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
-													<img class="list__image" src="/img/icons/paypal.svg" alt="">
-												</a>
-											</li>
-											<li class="list__item">
-												<a class="list__link" href="https://pay.google.com/intl/uk_ua/about/">
-													<img class="list__image" src="/img/icons/paypass.svg" alt="">
-												</a>
-											</li>
-										</ul>
-										<div class="cards">
-											<div class="cards-group">
-												<div class="cards__row">
-													<div class="inputs__group--card">
-														<input class="input-group__line-input--border" id="cardnumber"
-															name="cardnumber" tabindex="16" type="tel" autocomplete="on"
-															placeholder="Card number">
-													</div>
-													<div class="inputs__group--card">
-														<input class="input-group__line-input--border" id="cardnumber"
-															name="cardnumber" tabindex="16" type="tel" autocomplete="on"
-															placeholder="Card number">
-													</div>
+											<label class="radio-label--flex cash-delivery">
+												<input class="real-radio" type="radio" id="cash-on-delivery" name="paymethod"
+													value="credit-card" tabindex="20">
+												<span class="custom-radio"></span>
+												<div class="radio-flex">
+													<h5>Cash on delivery</h5>
+													<p>Pay with cash upon delivery.</p>
 												</div>
-												<div class="cards__row">
-													<div class="inputs__group--card">
-														<input class="input-group__line-input--border" id="cardnumber"
-															name="cardnumber" tabindex="16" type="tel" autocomplete="on"
-															placeholder="Card number">
-													</div>
-													<div class="inputs__group--card">
-														<input class="input-group__line-input--border" id="cardnumber"
-															name="cardnumber" tabindex="16" type="tel" autocomplete="on"
-															placeholder="Card number">
-													</div>
-												</div>
+											</label>
+											<div class="form-group--last">
+												<label class="radio-label">
+													<input class="real-radio" type="radio" id="paypol" name="paymethod"
+														value="different" tabindex="21">
+													<span class="custom-radio"></span>
+													Paypol
+												</label>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-					</div>
-					</form>
-				</div>
 
+							<button class="button" type="submit" tabindex="22">Pay Now</button>
+					</div>
+				</div>
+				</form>
 		</div>
-		</form>
+	</div>
+	</form>
 
 	</div>
 	</div>

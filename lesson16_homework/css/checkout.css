@@ -23,9 +23,29 @@ input::placeholder {
 	color: #807d7e;
 	font-family: "Causten" sans-serif;
 	font-size: 0.875rem;
-	font-style: normal;
 	font-weight: 400;
-	line-height: normal;
+}
+select::placeholder {
+	color: #807d7e;
+	font-family: "Causten" sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+#state {
+	color: #807d7e;
+	font-family: "Causten" sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+.real-radio:focus-visible + .custom-radio {
+	outline: 2px solid #8a33fd;
+	padding: 3px;
+	border-radius: 0%;
+}
+.real-checkbox:focus-visible + .custom-checkbox::after {
+	outline: 2px solid #8a33fd;
+	padding: 3px;
+	border-radius: 0%;
 }
 .wrapper {
 }
@@ -199,13 +219,16 @@ input::placeholder {
 	letter-spacing: 0.02rem;
 }
 .input-group__line-input--mini {
+	width: 100%;
 	background-color: #f6f6f6;
-	display: flex;
-	max-width: 15.375rem;
+
 	padding: 1rem 1.25rem;
-	align-items: center;
-	gap: 0.75rem;
 	border-radius: 0.5rem;
+	color: #3c4242;
+	font-family: "Causten", sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.02rem;
 }
 .forms__inline-row {
 	max-width: 51rem;
@@ -236,8 +259,8 @@ input::placeholder {
 	position: absolute;
 	bottom: -2rem;
 	left: 0;
-	width: 40.5rem;
-	height: 1px;
+	width: 100%;
+	height: 2px;
 	background-color: #edeef2;
 }
 .forms__button {
@@ -247,16 +270,12 @@ input::placeholder {
 	background: #a166f0;
 }
 .button {
-	display: inline-flex;
 	padding: 1rem 1.25rem;
-	justify-content: center;
-	align-items: center;
-	gap: 0.75rem;
 	border-radius: 0.5rem;
 	background: #8a33fd;
 	color: #fff;
-	text-align: center;
-	font-family: "Causten";
+
+	font-family: "Causten", sans-serif;
 	font-size: 1.125rem;
 	font-weight: 500;
 	transition: 0.3s;
@@ -391,6 +410,7 @@ input::placeholder {
 	transform: translate(-50%, -50%) scale(1);
 }
 .custom-radio {
+	flex: 0 0 18px;
 	margin-bottom: 1px;
 	position: relative;
 	display: inline-block;
@@ -418,6 +438,10 @@ input::placeholder {
 .checkbox__body {
 }
 .checkbox-label {
+	display: flex;
+	color: #3c4242;
+	font-family: "Causten", sans-serif;
+	font-size: 1.125rem;
 }
 .real-checkbox {
 	position: absolute;
@@ -447,12 +471,12 @@ input::placeholder {
 	position: absolute;
 	width: 0.75rem;
 	height: 0.75rem;
-	background-image: url(/img/icons/galka.svg);
-	background-size: contain;
+	background: url("../img/icons/galka.svg") no-repeat center;
+	background-size: 120%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	transition: 1.3s;
+	transition: 0.3s;
 }
 .text-input:focus-visible {
 	outline: 2px solid violet;
@@ -495,7 +519,13 @@ input::placeholder {
 	background-color: #f6f6f6;
 	max-width: 52.5rem;
 	border-radius: 15px;
-	padding: 2.44rem 1.75rem;
+	padding: 2.44rem 1.75rem 1.87rem 1.75rem;
+}
+.form-padding {
+	background-color: #f6f6f6;
+	max-width: 47.75rem;
+	border-radius: 15px;
+	padding: 2.44rem 1.75rem 0px 1.75rem;
 }
 .shiping-method__body--short {
 	position: relative;
@@ -550,27 +580,47 @@ input::placeholder {
 .list__image {
 }
 .cards {
+	position: relative;
+	padding: 0px 40px 0px 40px;
 	display: flex;
+	margin-bottom: 3.75rem;
 }
-.cards-group {
+
+.cards__group {
+	position: relative;
 	flex: 1 1 50%;
 	max-width: 44rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap: 1.7rem;
 }
+
+.cards::after {
+	content: "";
+	position: absolute;
+	bottom: -2rem;
+	width: 100%;
+	left: 0;
+	height: 2px;
+	background-color: #bebcbd;
+}
+
 .cards__row {
 	display: flex;
-	max-width: 704px;
+	flex-wrap: wrap;
+	max-width: 44rem;
 	justify-content: space-between;
+	gap: 1.7rem;
 }
 .inputs__group--card {
-	flex: 0 1 21.05rem;
-	max-width: 21.05rem;
+	flex: 1 21.05rem;
+	max-width: 16.75rem;
 }
 
 .input-group__line-input--border {
 	width: 100%;
+	min-width: 168px;
 	background-color: #f6f6f6;
 	border: 1px solid #3c4242;
 	padding: 1rem 1.25rem;
@@ -580,4 +630,55 @@ input::placeholder {
 	font-size: 1rem;
 	font-weight: 600;
 	letter-spacing: 0.02rem;
+}
+
+.eye {
+	position: relative;
+}
+.eye::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	background: url("../img/icons/eye.svg") no-repeat;
+	top: 50%;
+	right: 0%;
+	transform: translate(-50%, -50%);
+	width: 1.25rem;
+	height: 1.25rem;
+}
+.cash-delivery {
+	max-width: 44rem;
+	width: 100%;
+	position: relative;
+	margin-bottom: 3.75rem;
+}
+.cash-delivery::after {
+	content: "";
+	position: absolute;
+	bottom: -2rem;
+	width: 100%;
+	left: 0;
+	height: 2px;
+	background-color: #bebcbd;
+}
+.form-group--last {
+	margin-bottom: 1rem;
+}
+.shiping-method__body--long {
+	margin-bottom: 1rem;
+}
+.button--short:hover {
+	background: #a166f0;
+}
+.button {
+	max-width: fit-content;
+	padding: 1rem 1.25rem;
+	border-radius: 0.5rem;
+	background: #8a33fd;
+	color: #fff;
+	text-align: center;
+	font-family: "Causten";
+	font-size: 1.125rem;
+	font-weight: 500;
+	transition: 0.3s;
 }
