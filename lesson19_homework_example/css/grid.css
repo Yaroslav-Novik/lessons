@@ -1,0 +1,78 @@
+@import "nullstyle.css";
+@import "fonts.css";
+
+.nav {
+}
+.header {
+}
+.main {
+}
+
+.grid-container__colum {
+	max-height: 600px;
+	height: 100%;
+}
+.column {
+}
+.column__item {
+	max-width: 300px;
+	width: 100%;
+}
+.image-grid {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+.footer {
+}
+.grid-container2 {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(7, 1fr);
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 33.333%);
+
+	gap: 20px;
+}
+.grid-container3 {
+	grid-template-columns: repeat(3, 33.333%);
+}
+.grid-container4 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.grid-container4 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.grid-container5 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.wrapper {
+	margin: 0 auto;
+}
+.gen-container {
+	max-width: 1230px;
+	padding: 40px 15px;
+	margin: 0 auto;
+}
+.grid-container6 {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 50%);
+
+	justify-content: start;
+	justify-items: stretch;
+}
+.grid-container__item {
+	min-width: 160px;
+	background-color: blue;
+	color: rgb(255, 245, 245);
+	font-size: 24px;
+	padding: 20px;
+	word-wrap: break-word;
+}

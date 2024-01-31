@@ -1,0 +1,116 @@
+@import "nullstyle.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Rubik+Marker+Hatch&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,800&display=swap");
+
+/*--------------------*/
+a {
+	display: inline-block;
+}
+
+.wrapper {
+	min-height: 100vh;
+	max-width: 1600px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.menu {
+}
+.menu__list {
+}
+.menu__item {
+}
+.menu__link {
+}
+.submenu {
+}
+.submenu__item {
+}
+.submenu__link {
+}
+.general-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	max-width: 1230px;
+
+	margin: 0 auto;
+}
+.main {
+	flex: 1 0 auto;
+}
+
+.link {
+	font-family: "Orbitron", sans-serif;
+	font-weight: 800;
+	text-align: center;
+	font-size: 32px;
+	line-height: 1.4;
+	background-color: grey;
+	vertical-align: middle;
+	color: rgb(59, 58, 58);
+	-webkit-box-shadow: 5px 5px 10px 5px black;
+	box-shadow: 5px 5px 10px 5px black;
+	display: inline-block;
+	border: 2px solid grey;
+	width: 400px;
+	height: 50px;
+	text-shadow: 2px 2px 2px black;
+}
+.link:hover {
+	text-shadow: 3px 3px 3px white;
+	background-color: rgb(47, 46, 46);
+	-webkit-box-shadow: 7px 7px 4px rgb(79, 28, 142);
+	box-shadow: 7px 7px 8px rgba(225, 201, 254, 0.655);
+	border: 2px solid rgb(188, 186, 193);
+}
+.footer {
+	align-items: flex-end;
+}
+.footer__container {
+	width: 100%;
+	position: relative;
+
+	font-family: "Orbitron", sans-serif;
+	font-weight: 800;
+	text-align: center;
+	font-size: 36px;
+	line-height: 1.4;
+	background-color: grey;
+	-webkit-box-shadow: 5px -5px 10px 3px;
+	box-shadow: 15px -5px 14px black;
+	text-shadow: 4px 4px 2px rgb(79, 28, 142);
+}
+.menu {
+	font-size: 24px;
+	padding: 10px 20px;
+	background-color: rgb(72, 6, 6);
+	margin-bottom: 100px;
+}
+.menu__list {
+}
+.menu__item {
+	position: relative;
+}
+.menu__item:hover .submenu__item {
+	opacity: 1;
+	visibility: visible;
+}
+.menu__link {
+	color: white;
+}
+.submenu {
+}
+.submenu__item {
+	padding: 10px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 5px;
+}
+.submenu__link {
+	color: white;
+	background-color: green;
+	padding: 5px;
+}

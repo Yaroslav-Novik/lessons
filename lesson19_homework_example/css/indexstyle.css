@@ -1,0 +1,146 @@
+@import "nullstyle.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Rubik+Marker+Hatch&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,800&display=swap");
+
+/*--------------------*/
+a {
+	display: inline-block;
+}
+
+.wrapper {
+	min-height: 100vh;
+	max-width: 1600px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.general-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	max-width: 1230px;
+
+	margin: 0 auto;
+}
+.main {
+	flex: 1 0 auto;
+}
+
+body {
+	filter: saturate(1) blur(0px) brightness(1);
+	background: url(../img/1643955119_4-abrakadabra-fun-p-besshovnaya-tekstura-kosmosa-7.jpg);
+}
+
+.title {
+	width: 100%;
+	font-family: "Orbitron", sans-serif;
+	font-weight: 800;
+	text-align: center;
+	font-size: 40px;
+	line-height: 1.5;
+	margin-bottom: 200px;
+	background-color: grey;
+	-webkit-box-shadow: 5px 5px 10px 5px;
+	box-shadow: 5px 5px 10px 4px;
+	text-shadow: 4px 4px 4px rgb(79, 28, 142);
+}
+
+.list {
+	max-width: 400px;
+	margin: 0 auto;
+}
+.list li:not(:last-child) {
+	margin-bottom: 30px;
+}
+.list li {
+	margin: 0 auto;
+
+	position: relative;
+}
+li:hover ::before {
+	visibility: visible;
+}
+
+li::before {
+	content: "";
+	position: absolute;
+	left: -70px;
+	top: 50%; /* Регулируйте положение изображения по вертикали */
+	transform: translateY(-50%);
+	width: 53px; /* Регулируйте ширину изображения */
+	height: 53px; /* Регулируйте высоту изображения */
+	background-image: url("../img/icons/123.png");
+
+	background-size: cover; /* Регулируйте масштабирование изображения */
+	background-repeat: no-repeat;
+	margin-right: 0; /* Регулируйте отступ между изображением и текстом */
+	border-radius: 50%;
+	opacity: 0;
+	box-shadow: 3px 3px 8px rgba(225, 201, 254, 0.655);
+}
+li::after {
+	content: "";
+	position: absolute;
+
+	right: -66px;
+	top: 50%; /* Регулируйте положение изображения по вертикали */
+	transform: translateY(-50%);
+	width: 53px; /* Регулируйте ширину изображения */
+	height: 53px; /* Регулируйте высоту изображения */
+	background-image: url("../img/icons/123.png");
+	background-size: cover; /* Регулируйте масштабирование изображения */
+	background-repeat: no-repeat;
+	margin-right: -8px; /* Регулируйте отступ между изображением и текстом */
+	border-radius: 50%;
+	opacity: 0;
+	box-shadow: 3px 3px 8px rgba(225, 201, 254, 0.655);
+}
+li:hover::before {
+	opacity: 1;
+	transition: all 0.2s;
+}
+li:hover::after {
+	opacity: 1;
+	transition: all 0.2s;
+}
+.link {
+	font-family: "Orbitron", sans-serif;
+	font-weight: 800;
+	text-align: center;
+	font-size: 32px;
+	line-height: 1.4;
+	background-color: grey;
+	vertical-align: middle;
+	color: rgb(59, 58, 58);
+	-webkit-box-shadow: 5px 5px 10px 5px black;
+	box-shadow: 5px 5px 10px 5px black;
+	display: inline-block;
+	border: 2px solid grey;
+	width: 400px;
+	height: 50px;
+	text-shadow: 2px 2px 2px black;
+}
+.link:hover {
+	text-shadow: 3px 3px 3px white;
+	background-color: rgb(47, 46, 46);
+	-webkit-box-shadow: 7px 7px 4px rgb(79, 28, 142);
+	box-shadow: 7px 7px 8px rgba(225, 201, 254, 0.655);
+	border: 2px solid rgb(188, 186, 193);
+}
+.footer {
+	align-items: flex-end;
+}
+.footer__container {
+	width: 100%;
+	position: relative;
+
+	font-family: "Orbitron", sans-serif;
+	font-weight: 800;
+	text-align: center;
+	font-size: 36px;
+	line-height: 1.4;
+	background-color: grey;
+	-webkit-box-shadow: 5px -5px 10px 3px;
+	box-shadow: 15px -5px 14px black;
+	text-shadow: 4px 4px 2px rgb(79, 28, 142);
+}

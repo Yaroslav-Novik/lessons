@@ -1,0 +1,131 @@
+@import "nullstyle.css";
+@import "fonts.css";
+
+.wrapper {
+	max-width: 90.50625rem;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 6.32rem 15px;
+}
+.gen-container {
+	max-width: 77.5rem;
+	margin: 0 auto;
+}
+.nav {
+}
+.header {
+}
+.main {
+}
+.new-arrival {
+}
+.title {
+}
+.title:not(:last-child) {
+	margin-bottom: 1.38rem;
+}
+.title__i {
+	display: flex;
+	color: #3c4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 2.125rem;
+	font-weight: 600;
+	line-height: 100%;
+	letter-spacing: 0.0425rem;
+	justify-content: start;
+}
+.title__i::before {
+	flex: 0 0 0.4rem;
+	content: "";
+	display: flex;
+	width: 0.4rem;
+	height: 1.875rem;
+	border-radius: 0.625rem;
+	background: #8a33fd;
+	gap: 1.25rem;
+	margin-right: 1.25rem;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	justify-content: center;
+	align-items: center;
+	row-gap: 2.2rem;
+	column-gap: 2.2rem;
+}
+@media (min-width: 550px) {
+	.grid-container {
+		display: grid;
+		/*grid-template-columns: repeat(autofill, minmax(250px, 1fr));*/
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		align-items: center;
+		row-gap: 2.2rem;
+		column-gap: 2.2rem;
+	}
+}
+@media (min-width: 850px) {
+	.grid-container {
+		display: grid;
+		/*grid-template-columns: repeat(autofill, minmax(250px, 1fr));*/
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		align-items: center;
+		row-gap: 2.2rem;
+		column-gap: 2.2rem;
+	}
+}
+@media (min-width: 1000px) {
+	.grid-container {
+		display: grid;
+		/*grid-template-columns: repeat(autofill, minmax(250px, 1fr));*/
+		grid-template-columns: repeat(4, 1fr);
+
+		align-items: center;
+		row-gap: 2.2rem;
+		column-gap: 2.2rem;
+	}
+	.title:not(:last-child) {
+		margin-bottom: 3.38rem;
+	}
+	.title__i {
+		display: flex;
+		color: #3c4242;
+		font-family: "Core Sans C", sans-serif;
+		font-size: 1.5rem;
+		font-weight: 600;
+		line-height: 100%;
+		letter-spacing: 0.0425rem;
+	}
+}
+
+.item {
+	display: grid;
+	grid-template-columns: 16.5rem;
+	justify-self: center;
+	align-self: center;
+}
+.item__image-link {
+	display: block;
+}
+.item__image-link:not(:last-child) {
+	margin-bottom: 2rem;
+}
+.item-image {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 16.5 / 16.5;
+	border-radius: 0.75rem;
+	object-fit: cover;
+	object-position: top;
+}
+.item__title {
+	color: #3c4242;
+	font-family: "Causten", sans-serif;
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: 0.0125rem;
+}
+.footer {
+}
